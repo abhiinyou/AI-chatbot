@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+body {
+  background: #1b1b1c;
+}
+
+#app {
+  position: absolute;
+  background: #080808;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* #chat_container {
+  flex: 1;
+  position: relative;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+} */
+
+/* hides scrollbar */
+/* #chat_container::-webkit-scrollbar {
+  display: none;
+} */
+
+.wrapper {
+  width: 100%;
+  padding: 15px;
+  padding-left: 0px;
+}
+
+.ai {
+  background: #181818;
+}
+
+.chat {
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  background: #5436da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai .profile {
+  background: #75ac9d;
+}
+
+.profile img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.message {
+  flex: 1;
+  color: #dcdcdc;
+  font-size: 17px;
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: pre-wrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.message::-webkit-scrollbar {
+  display: none;
+}
+
+form {
+  width: 100%;
+  max-width: 2280px;
+  justify-content: center;
+  padding-left: 150px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 80%;
+  height: auto;
+  color: #fff;
+  font-size: 18px;
+  /* padding-bottom: 10px; */
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 8px 0 #524e4e;
+  outline: none;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+form img {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 590px) {
+  form {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
