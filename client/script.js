@@ -83,9 +83,9 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  const response = await fetch("http://localhost:9000", {
+  const response = await fetch("http://localhost:5000", {
+    //https://codebot-35z7.onrender.com/
     method: "POST",
-    mode: "cors",
     headers: {
       "Content-Type": "application/json",
     },
@@ -101,7 +101,6 @@ const handleSubmit = async (e) => {
     const data = await response.json();
     const parsedData = data.bot.trim(); // trims any trailing spaces/'\n'
 
-    console.log({ parsedData });
     typeText(messageDiv, parsedData);
   } else {
     const err = await response.text();
